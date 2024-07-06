@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+
+  background-color: #000000;
+}
+.internal-wrapper .link-wrapper {
+  width: 1050px;
+  height: 50px;
+  margin: 0 auto;
+}
+.menu-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-wrapper li {
+  padding: 15px 0 10px 0;
+}
+.menu-wrapper li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 100;
+}
+.menu-wrapper li a img {
+  width: 19px;
+}
