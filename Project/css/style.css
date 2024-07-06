@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-header {
+body {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
-
+    width: 100%;
+}
+header {
   background-color: #000000;
 }
 .internal-wrapper .link-wrapper {
@@ -29,4 +31,54 @@ header {
 }
 .menu-wrapper li a img {
   width: 19px;
+}
+section.internal-wrapper {
+  height: 80vh;
+}
+.internal-wrapper .first-internal-wrapper {
+  /* width: 1050px; */
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.small-title {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.big-title {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+.midem-title {
+  font-size: 3rem;
+}
+.link-more-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.link-more-wrapper ul li a {
+  text-decoration: none;
+  color: #06c;
+  font-size: 1.3rem;
+}
+.link-more-wrapper ul li a:hover {
+  color: #000000;
+}
+.link-more-wrapper ul li a:after {
+  content: "\f105";
+  padding-left: 5px;
+}
+.image-wrapper{
+    margin-top: 30px;
+}
+
+.internal-wrapper:nth-of-type(2){
+    background-color: #000000;
 }
