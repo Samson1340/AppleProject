@@ -6,7 +6,7 @@
 body {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
-    width: 100%;
+    width: 100vw;
 }
 header {
   background-color: #000000;
@@ -33,17 +33,17 @@ header {
   width: 19px;
 }
 section.internal-wrapper {
-  height: 80vh;
+  height: auto;
 }
-.internal-wrapper .first-internal-wrapper {
+.internal-wrapper .first-internal-wrapper, .internal-wrapper .second-internal-wrapper, .internal-wrapper .third-internal-wrapper {
   /* width: 1050px; */
   margin: 0 auto;
   display: flex;
-  gap: 0.5rem;
+  gap: 1.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .small-title {
   font-size: 1.4rem;
@@ -76,9 +76,80 @@ section.internal-wrapper {
   padding-left: 5px;
 }
 .image-wrapper{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .internal-wrapper:nth-of-type(2){
-    background-color: #000000;
+    background-image: url(/Resources/apple-html-css-replica/images/home/iphone11-pro-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 680px;
+    width: 100vw;
+}
+
+.second-internal-wrapper .midem-title{
+  font-size: 1.5rem;
+}
+.second-internal-wrapper .small-title{
+  font-size: 1.1rem;
+}
+
+.internal-wrapper:nth-of-type(3){
+  background-image: url(/Resources/apple-html-css-replica/images/home/iphone11-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color: #ffffff; */
+  height: 680px;
+  width: 100vw;
+}
+.internal-wrapper:nth-of-type(4){
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.four-internal-wrapper{
+  display: flex;
+  gap: 20px;
+  width: 100vw;
+  flex-wrap: nowrap;
+}
+.four-internal-wrapper .card-wrapper{
+  width: 50vw;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-left-1{
+  background-image: url(/Resources/apple-html-css-replica/images/home/watch-series-5.jpg);
+  
+}
+.card-right-1{
+  background-image: url(/Resources/apple-html-css-replica/images/home/apple-card.jpg);
+  
+}
+.card-left-2{
+  background-image: url(/Resources/apple-html-css-replica/images/home/apple-tv-background.jpg);
+}
+.card-right-2{
+  background-color: #000000;
+}
+.card-left-3{
+  /* background-image: url(); */
+}
+.card-right-3{
+  background-image: url(/Resources/apple-html-css-replica/images/home/new-ipad.jpg);
+}
+footer{
+  width: 70%;
+  margin: 0 auto;
 }
