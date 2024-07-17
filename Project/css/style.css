@@ -6,7 +6,7 @@
 body {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
-    width: 100vw;
+  width: 100vw;
 }
 header {
   background-color: #000000;
@@ -35,7 +35,12 @@ header {
 section.internal-wrapper {
   height: auto;
 }
-.internal-wrapper .first-internal-wrapper, .internal-wrapper .second-internal-wrapper, .internal-wrapper .third-internal-wrapper {
+.first-internal-wrapper {
+  background-color: #fafafa;
+}
+.internal-wrapper .first-internal-wrapper,
+.internal-wrapper .second-internal-wrapper,
+.internal-wrapper .third-internal-wrapper {
   /* width: 1050px; */
   margin: 0 auto;
   display: flex;
@@ -75,28 +80,28 @@ section.internal-wrapper {
   content: "\f105";
   padding-left: 5px;
 }
-.image-wrapper{
-    margin-top: 10px;
+.image-wrapper {
+  margin-top: 10px;
 }
 
-.internal-wrapper:nth-of-type(2){
-    background-image: url(/Resources/apple-html-css-replica/images/home/iphone11-pro-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-    height: 680px;
-    width: 100vw;
+.internal-wrapper:nth-of-type(2) {
+  background-image: url(/Resources/apple-html-css-replica/images/home/iphone11-pro-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  height: 680px;
+  width: 100vw;
 }
 
-.second-internal-wrapper .midem-title{
+.second-internal-wrapper .midem-title {
   font-size: 1.5rem;
 }
-.second-internal-wrapper .small-title{
+.second-internal-wrapper .small-title {
   font-size: 1.1rem;
 }
 
-.internal-wrapper:nth-of-type(3){
+.internal-wrapper:nth-of-type(3) {
   background-image: url(/Resources/apple-html-css-replica/images/home/iphone11-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -105,20 +110,20 @@ section.internal-wrapper {
   height: 680px;
   width: 100vw;
 }
-.internal-wrapper:nth-of-type(4){
+.internal-wrapper:nth-of-type(4) {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.four-internal-wrapper{
+.four-internal-wrapper {
   display: flex;
   gap: 20px;
   width: 100vw;
   flex-wrap: nowrap;
 }
-.four-internal-wrapper .card-wrapper{
+.four-internal-wrapper .card-wrapper {
   width: 50vw;
-  height: 580px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,27 +134,108 @@ section.internal-wrapper {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.card-left-1{
+.card-left-1 {
   background-image: url(/Resources/apple-html-css-replica/images/home/watch-series-5.jpg);
-  
 }
-.card-right-1{
+.card-right-1 {
   background-image: url(/Resources/apple-html-css-replica/images/home/apple-card.jpg);
-  
 }
-.card-left-2{
+.card-left-2 {
   background-image: url(/Resources/apple-html-css-replica/images/home/apple-tv-background.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
 }
-.card-right-2{
+.card-left-2 ul li {
+  font-size: 1.2em;
+  list-style: none;
+}
+.card-left-2 ul li a::after {
+  content: "\f105";
+  margin-left: 1rem;
+}
+.card-left-2 ul li a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.card-right-2 {
   background-color: #000000;
+  color: #ffffff;
 }
-.card-left-3{
-  /* background-image: url(); */
+.card-left-3 {
+  background-color: #fafafa;
 }
-.card-right-3{
+.card-right-3 {
   background-image: url(/Resources/apple-html-css-replica/images/home/new-ipad.jpg);
 }
-footer{
-  width: 70%;
+footer {
+  width: 100%;
+  background-color: #f5f5f7;
+}
+footer .internal-wrapper {
   margin: 0 auto;
+  width: 1000px;
+}
+.description-text-wrapper {
+  text-align: justify;
+  line-height: 1.4em;
+  color: #86868b;
+  padding-top: 30px;
+  font-size: 0.8em;
+}
+footer hr {
+  margin: 20px 0;
+}
+footer a {
+  color: #86868b;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.link-footer-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.link-footer-wrapper h2 {
+  font-size: 0.9em;
+  font-weight: 540;
+}
+.link-footer-wrapper ul {
+  list-style: none;
+  font-size: 0.8em;
+  line-height: 2em;
+  margin-bottom: 30px;
+}
+.footer-lower-wrapper {
+  font-size: 0.8em;
+  color: #86868b;
+}
+.footer-lower-wrapper a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer-last-link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  color: #86868b;
+  padding-bottom: 30px;
+}
+.footer-last-link-wrapper ul,
+.footer-country-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+}
+.footer-last-link-wrapper ul li::after {
+  font-family: FontAwesome;
+  content: "\f146";
+  margin-left: 5px;
+  color: #86868b;
 }
